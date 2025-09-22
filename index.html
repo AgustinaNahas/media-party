@@ -18,7 +18,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <h1 class="title">Mujeres Jefas de Hogar en Argentina</h1>
+            <h1 class="title">Cambio en github</h1>
             <p class="subtitle">Visualización interactiva del porcentaje de mujeres como jefas de hogar por provincia</p>
         </div>
     </header>
@@ -113,6 +113,19 @@
                 </div>
             </div>
 
+            <!-- Gráfico histórico -->
+            <div class="chart-section">
+                <div class="card">
+                    <h3 class="card-title">Evolución Histórica Nacional</h3>
+                    <p class="chart-subtitle">Porcentaje promedio de mujeres jefas de hogar en Argentina (2000-2023)</p>
+                    <div id="historical-chart" class="chart-container"></div>
+                    <div class="chart-controls">
+                        <button id="toggle-province" class="btn btn-secondary">Mostrar por provincia</button>
+                        <button id="reset-zoom" class="btn btn-outline">Resetear zoom</button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Información adicional -->
             <div class="info-section">
                 <div class="card">
@@ -149,8 +162,12 @@
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
             crossorigin=""></script>
     
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
     <!-- Custom JavaScript -->
     <script src="data.js"></script>
     <script src="script.js"></script>
+    <script src="chart.js"></script>
 </body>
 </html>
